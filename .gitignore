@@ -3,6 +3,9 @@ node_modules/
 out/
 coverage/
 tsconfig.tsbuildinfo
+.turbo/
+.cache/
+.eslintcache
 
 .env.local
 .env.development.local
@@ -17,6 +20,7 @@ npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
 
 .DS_Store
 .vercel
