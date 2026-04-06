@@ -9,6 +9,9 @@ tsconfig.tsbuildinfo
 .env.production.local
 .env.test.local
 .env*.local
+.env
+.env.*
+!.env.example
 
 npm-debug.log*
 pnpm-debug.log*
