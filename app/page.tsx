@@ -5,6 +5,8 @@ import SkillsSection from "./components/homepage/skills/skills";
 import ProjectsSection from "./components/homepage/projects/projects";
 import EducationSection from "./components/homepage/education/education";
 import ContactSection from "./components/homepage/contact/contact-section";
+import Footer from "./components/homepage/footer/footer";
+import ScrollToTop from "./components/helper/scroll-to-top";
 
 export default function HomePage() {
   return (
@@ -28,6 +30,8 @@ export default function HomePage() {
       <section className="px-4 pb-12 sm:px-6 lg:px-8">
         <ContactSection />
       </section>
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }
