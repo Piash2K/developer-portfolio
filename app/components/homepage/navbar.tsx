@@ -12,8 +12,8 @@ const navItems: NavItem[] = [
   { href: "/#about", label: "ABOUT" },
   { href: "/#experience", label: "EXPERIENCE" },
   { href: "/#skills", label: "SKILLS" },
-  { href: "/#education", label: "EDUCATION" },
   { href: "/#projects", label: "PROJECTS" },
+  { href: "/#education", label: "EDUCATION" },
 ];
 
 export default function Navbar() {
@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-[120] transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-0 z-120 transition-colors duration-300 ${
         isScrolled
           ? "bg-[#0d1224]/70 shadow-[0_10px_30px_rgba(2,6,23,0.28)] backdrop-blur-md"
           : "bg-transparent shadow-none backdrop-blur-0"
