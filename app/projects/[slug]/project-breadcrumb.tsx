@@ -14,7 +14,7 @@ function ProjectBreadcrumb({ label }: ProjectBreadcrumbProps) {
 	};
 
 	return (
-		<div className="mb-8 flex items-center gap-3 text-sm text-slate-300">
+		<div className="mb-4 flex items-center gap-3 text-sm text-slate-300 lg:mb-5">
 			<button
 				type="button"
 				onClick={handleBackToProjects}

@@ -11,7 +11,8 @@ export type ProjectItem = {
 	technologies: string[];
 	features: string[];
 	image: string | { src: string };
-	repositoryUrl: string;
+	frontendRepositoryUrl: string;
+	backendRepositoryUrl: string;
 	liveUrl: string;
 };
 
@@ -40,8 +41,9 @@ export const projectsData: ProjectItem[] = [
 			"Scalable PostgreSQL data model",
 		],
 		image: mediStore1,
-		repositoryUrl: "https://github.com/Piash2K",
-		liveUrl: "#",
+		frontendRepositoryUrl: "https://github.com/Piash2K/medi-store-client.git",
+		backendRepositoryUrl: "https://github.com/Piash2K/medi-store-server.git",
+		liveUrl: "https://medi-store-client-wheat.vercel.app/",
 	},
 	{
 		slug: "estateease",
@@ -58,8 +60,9 @@ export const projectsData: ProjectItem[] = [
 			"Administrative controls and reports",
 		],
 		image: estateEase1,
-		repositoryUrl: "https://github.com/Piash2K",
-		liveUrl: "#",
+		frontendRepositoryUrl: "https://github.com/Piash2K/estate-ease-client.git",
+		backendRepositoryUrl: "https://github.com/Piash2K/estate-ease-server.git",
+		liveUrl: "https://estate-ease-2k25.web.app/",
 	},
 	{
 		slug: "blog-website",
@@ -76,8 +79,9 @@ export const projectsData: ProjectItem[] = [
 			"Authentication and user accounts",
 		],
 		image: blogWebsite1,
-		repositoryUrl: "https://github.com/Piash2K",
-		liveUrl: "#",
+		frontendRepositoryUrl: "https://github.com/Piash2K/blog-website-client.git",
+		backendRepositoryUrl: "https://github.com/Piash2K/blog-website-server.git",
+		liveUrl: "https://blog-website-2k25.web.app/",
 	},
 	{
 		slug: "chill-gamer",
@@ -94,8 +98,9 @@ export const projectsData: ProjectItem[] = [
 			"Responsive interface design",
 		],
 		image: chillGamer1,
-		repositoryUrl: "https://github.com/Piash2K",
-		liveUrl: "#",
+		frontendRepositoryUrl: "https://github.com/Piash2K/chill-gamer-client-side.git",
+		backendRepositoryUrl: "https://github.com/Piash2K/chill-gamer-server.git",
+		liveUrl: "https://chill-gamer-2k25.web.app/",
 	},
 ];
 
