@@ -1,6 +1,7 @@
 import HeroSection from "./components/homepage/hero-section/hero-section";
 import Navbar from "./components/homepage/navbar";
 import AboutSection from "./components/homepage/about/about";
+import ExperienceSection from "./components/homepage/experience/experience";
 import SkillsSection from "./components/homepage/skills/skills";
 import ProjectsSection from "./components/homepage/projects/projects";
 import EducationSection from "./components/homepage/education/education";
@@ -17,6 +18,9 @@ export default function HomePage() {
       </main>
       <section className="px-4 pb-12 sm:px-6 lg:px-8">
         <AboutSection />
+      </section>
+      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+        <ExperienceSection />
       </section>
       <section className="px-4 pb-12 sm:px-6 lg:px-8">
         <SkillsSection />
