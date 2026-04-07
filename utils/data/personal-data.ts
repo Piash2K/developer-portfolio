@@ -1,6 +1,9 @@
 export const personalData = {
   name: "Piash Islam",
   designation: "Software Developer",
+  email: "piashislam2k@gmail.com",
+  phone: "+8801301565464",
+  address: "Ashulia, Savar, Dhaka",
   description:
     "I am a passionate full-stack web developer specializing in modern technologies like React.js, Next.js, Node.js, Express.js, PostgreSQL, MongoDB and Prisma ORM.I enjoy building scalable, user-friendly applications and turning complex ideas into simple solutions.I continuously learn and improve my skills through real-world projects, aiming to grow into a skilled software engineer with strong backend and system design expertise.",
   profile: "/profile.png",

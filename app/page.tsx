@@ -4,6 +4,7 @@ import AboutSection from "./components/homepage/about/about";
 import SkillsSection from "./components/homepage/skills/skills";
 import ProjectsSection from "./components/homepage/projects/projects";
 import EducationSection from "./components/homepage/education/education";
+import ContactSection from "./components/homepage/contact/contact-section";
 
 export default function HomePage() {
   return (
@@ -23,6 +24,9 @@ export default function HomePage() {
       </section>
       <section className="px-4 pb-12 sm:px-6 lg:px-8">
         <EducationSection />
+      </section>
+      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+        <ContactSection />
       </section>
     </div>
   );
