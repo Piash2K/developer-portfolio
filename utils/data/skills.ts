@@ -12,7 +12,6 @@ export const skillsData = [
   "MongoDB",
   "PostgreSQL",
   "Git",
-  "Go",
   "Figma",
   "Firebase",
 ];
