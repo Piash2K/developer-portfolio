@@ -8,20 +8,20 @@ export type EducationItem = {
 export const educations: EducationItem[] = [
 	{
 		id: 1,
-		title: "Bachelor Degree",
+		title: "BSc in Information and Communication Engineering",
 		duration: "2022 - 2025",
-		institution: "Daffodil International University",
+		institution: "Daffodil International University, Dhaka",
 	},
 	{
 		id: 2,
-		title: "Higher Secondary Certificate",
-		duration: "2019 - 2020",
-		institution: "Jashore Cantonment College",
+		title: "Higher Secondary Certificate(Science)",
+		duration: "2017 - 2020",
+		institution: "Jashore Cantonment College, Jashore",
 	},
 	{
 		id: 3,
-		title: "Secondary School Certificate",
+		title: "Secondary School Certificate(Science)",
 		duration: "2011 - 2017",
-		institution: "Basantapur Secondary School",
+		institution: "Basantapur Secondary School, Jhenaidah",
 	},
 ];

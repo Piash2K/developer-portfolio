@@ -35,7 +35,7 @@ function Education() {
 							<Image
 								src={education1}
 								alt="Education"
-								className="h-96 w-full rounded-2xl border border-[#2a2e5a] object-cover shadow-2xl lg:h-122"
+								className="h-96 w-full rounded-2xl border border-[#2a2e5a] object-cover shadow-2xl lg:h-128"
 								priority
 							/>
 						</div>
