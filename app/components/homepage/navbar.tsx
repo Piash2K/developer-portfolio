@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { FiMenu, FiX } from "react-icons/fi";
 
 type NavItem = {
   href: string;
@@ -18,6 +19,7 @@ const navItems: NavItem[] = [
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -32,6 +34,19 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+
   return (
     <nav
       className={`fixed inset-x-0 top-0 z-120 transition-colors duration-300 ${
@@ -40,27 +55,60 @@ export default function Navbar() {
           : "bg-transparent shadow-none backdrop-blur-0"
       }`}
     >
-      <div
-        className="flex w-full flex-col items-start justify-between gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:px-8"
-      >
-        <div className="flex shrink-0 items-center">
-          <Link href="/" className="text-2xl font-semibold tracking-[0.2em] text-[#16f2b3] sm:text-3xl">
-            PIASH ISLAM
-          </Link>
+      <div className="relative w-full px-4 py-4 sm:px-6 lg:px-8">
+        <div className="flex w-full items-center justify-between gap-4">
+          <div className="flex shrink-0 items-center">
+            <Link href="/" className="text-2xl font-semibold tracking-[0.2em] text-[#16f2b3] sm:text-3xl">
+              PIASH ISLAM
+            </Link>
+          </div>
+
+          <button
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMenuOpen}
+            onClick={() => setIsMenuOpen((currentValue) => !currentValue)}
+            className="inline-flex h-10 w-10 items-center justify-center p-0 text-[#16f2b3] lg:hidden"
+          >
+            {isMenuOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
+          </button>
+
+          <ul className="hidden flex-wrap items-center gap-x-1 gap-y-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-200 sm:text-sm lg:flex lg:justify-end">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="block rounded-full px-3 py-2 transition-colors duration-300 hover:text-pink-400"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <ul className="flex flex-wrap items-center gap-x-1 gap-y-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-200 sm:text-sm lg:justify-end">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                className="block rounded-full px-3 py-2 transition-colors duration-300 hover:text-pink-400"
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div
+          className={`absolute left-4 right-4 top-full overflow-hidden rounded-2xl bg-[#0f1624]/95 transition-all duration-300 sm:left-6 lg:hidden ${
+            isMenuOpen
+              ? "mt-2 max-h-96 border border-[#2d2b55] opacity-100 shadow-[0_20px_50px_rgba(2,6,23,0.45)]"
+              : "mt-0 max-h-0 border border-transparent opacity-0 pointer-events-none"
+          }`}
+        >
+          <ul className="flex flex-col gap-1 p-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-200">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-xl px-4 py-3 transition-colors duration-300 hover:bg-white/5 hover:text-[#16f2b3]"
+                >
+                  <span>{item.label}</span>
+                  <span className="h-2 w-2 rounded-full bg-[#16f2b3] opacity-70" />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </nav>
   );
