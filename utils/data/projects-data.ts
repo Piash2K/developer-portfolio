@@ -2,6 +2,7 @@ import blogWebsite1 from "@/app/assets/project-image/BlogWebsite1 (1).png";
 import chillGamer1 from "@/app/assets/project-image/ChillGamer1.png";
 import estateEase1 from "@/app/assets/project-image/EstateEase1.png";
 import mediStore1 from "@/app/assets/project-image/MediStore1.png";
+import type { StaticImageData } from "next/image";
 
 export type ProjectItem = {
 	slug: string;
@@ -10,7 +11,7 @@ export type ProjectItem = {
 	description: string;
 	technologies: string[];
 	features: string[];
-	image: string | { src: string };
+	image: StaticImageData;
 	frontendRepositoryUrl: string;
 	backendRepositoryUrl: string;
 	liveUrl: string;

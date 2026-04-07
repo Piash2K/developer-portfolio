@@ -23,7 +23,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 type ProjectImageSliderProps = {
   slug: string;
   projectName: string;
-  fallbackImage: string | { src: string };
+  fallbackImage: StaticImageData;
 };
 
 const galleryBySlug: Record<string, StaticImageData[]> = {
@@ -34,7 +34,7 @@ const galleryBySlug: Record<string, StaticImageData[]> = {
 };
 
 function ProjectImageSlider({ slug, projectName, fallbackImage }: ProjectImageSliderProps) {
-  const images: Array<string | StaticImageData> = galleryBySlug[slug] ?? [fallbackImage];
+  const images: StaticImageData[] = galleryBySlug[slug] ?? [fallbackImage];
   const [activeIndex, setActiveIndex] = useState(0);
 
   const goNext = () => {
