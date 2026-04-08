@@ -14,7 +14,7 @@ import ContactForm from "./contact-form";
 
 function ContactSection() {
   return (
-    <div id="contact" className="relative mt-24 my-12 text-white lg:my-16">
+    <div id="contact" className="relative mt-24 my-12 scroll-mt-24 text-white lg:my-16">
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar theme="dark" />
 
       <div className="absolute -right-8 top-24 hidden flex-col items-center lg:flex">
