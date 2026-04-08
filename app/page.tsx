@@ -13,25 +13,25 @@ export default function HomePage() {
   return (
     <div className="relative">
       <Navbar />
-      <main className="flex min-h-screen w-full items-start px-4 pb-6 pt-0 sm:px-6 lg:px-8">
+      <main className="mx-auto flex min-h-screen w-full max-w-screen-2xl items-start px-4 pb-6 pt-0 sm:px-6 lg:px-8">
         <HeroSection />
       </main>
-      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <AboutSection />
       </section>
-      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <ExperienceSection />
       </section>
-      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <SkillsSection />
       </section>
       <section className="px-4 pb-12 sm:px-6 lg:px-8">
         <ProjectsSection />
       </section>
-      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <EducationSection />
       </section>
-      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <ContactSection />
       </section>
       <Footer />

@@ -34,7 +34,7 @@ function ScrollToTop() {
       type="button"
       onClick={scrollToTop}
       aria-label="Scroll to top"
-      className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-linear-to-r from-pink-500 to-violet-600 text-white shadow-lg shadow-violet-950/30 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-violet-950/40"
+      className="fixed bottom-4 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-linear-to-r from-pink-500 to-violet-600 text-white shadow-lg shadow-violet-950/30 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-violet-950/40 sm:bottom-6 sm:right-6"
     >
       <FaArrowUp size={16} />
     </button>

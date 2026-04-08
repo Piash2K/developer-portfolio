@@ -11,7 +11,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-between pt-28 pb-8 lg:pt-32 lg:pb-14">
+    <section className="relative overflow-x-clip flex flex-col items-center justify-between pt-28 pb-8 lg:pt-32 lg:pb-14">
       <Image
         src="/hero.svg"
         alt="Hero"
