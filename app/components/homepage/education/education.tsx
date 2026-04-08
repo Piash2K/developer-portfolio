@@ -31,7 +31,7 @@ function Education() {
 			<div className="py-8">
 				<div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
 					<div className="flex items-start justify-center">
-						<div className="w-3/4">
+						<div className="w-full">
 							<Image
 								src={education1}
 								alt="Education"

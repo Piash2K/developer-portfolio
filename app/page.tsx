@@ -25,7 +25,7 @@ export default function HomePage() {
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <SkillsSection />
       </section>
-      <section className="px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <ProjectsSection />
       </section>
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
