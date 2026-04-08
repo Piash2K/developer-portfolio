@@ -6,7 +6,7 @@ import GlowCard from "../../helper/glow-card";
 
 function Education() {
 	return (
-		<div id="education" className="relative z-50 my-12 border-t border-[#25213b] lg:my-24">
+		<div id="education" className="relative z-50 my-12 scroll-mt-18 border-t border-[#25213b] lg:my-24">
 			<Image
 				src="/section.svg"
 				alt="Hero"

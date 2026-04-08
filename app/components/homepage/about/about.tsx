@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function AboutSection() {
 	return (
-		<section id="about" className="relative my-12 lg:my-16">
+		<section id="about" className="relative my-12 scroll-mt-32 lg:my-16">
 			<div className="absolute -right-8 top-16 hidden flex-col items-center lg:flex">
 				<span className="w-fit rotate-90 rounded-md bg-[#1a1443] px-5 py-2 text-xl text-white">
 					ABOUT ME
