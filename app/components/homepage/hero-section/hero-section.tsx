@@ -39,7 +39,7 @@ function HeroSection() {
                   "Frontend Specialist",
                   "Backend & API Developer",
                   "Database Design Engineer",
-                  "Performance-Focused Problem Solver",
+                  "Problem Solver",
                 ]}
                 loop={0}
                 cursor

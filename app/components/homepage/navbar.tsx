@@ -73,12 +73,12 @@ export default function Navbar() {
             {isMenuOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
           </button>
 
-          <ul className="hidden flex-wrap items-center gap-x-1 gap-y-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-200 sm:text-sm lg:flex lg:justify-end">
+          <ul className="hidden flex-wrap items-center gap-x-1 gap-y-1 text-xs font-medium uppercase tracking-[0.18em] sm:text-sm lg:flex lg:justify-end">
             {navItems.map((item, index) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`block rounded-full py-2 transition-colors duration-300 hover:text-pink-400 ${
+                  className={`block rounded-full py-2 text-slate-200 transition-colors duration-300 hover:text-pink-600! ${
                     index === navItems.length - 1 ? "pl-3 pr-0" : "px-3"
                   }`}
                 >

@@ -11,5 +11,5 @@ export const personalData = {
   linkedIn: "https://www.linkedin.com/in/piash-islam-2k/",
   facebook: "https://www.facebook.com/piash.islam.2000/",
   twitter: "https://x.com/PiashIslam2K",
-  resume: "https://drive.google.com/file/d/1oYJ71SrDfrUaSzFdvvZP5imoyGcNGoBc/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1ISvRNKhLW5BdxWT7wJSPyt0SXwjPdYz0/view?usp=sharing",
 };

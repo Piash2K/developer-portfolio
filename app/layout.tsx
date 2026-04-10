@@ -4,8 +4,11 @@ import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
-  title: "Developer Portfolio",
+  title: "Portfolio of Piash Islam- Software Engineer",
   description: "Portfolio project powered by Next.js and TypeScript",
+  icons: {
+    icon: "/Favicon.png",
+  },
 };
 
 type RootLayoutProps = {

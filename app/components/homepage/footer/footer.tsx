@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="relative overflow-hidden border-t border-[#353951] bg-[#0d1224] text-white">
       <div className="mx-auto w-full max-w-screen-2xl px-4 py-6 sm:px-6 lg:px-8 lg:py-10">
@@ -10,7 +12,7 @@ function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm text-slate-300 sm:text-base md:text-left">
-            © Developer Portfolio by{" "}
+            Copyright © {year} - All rights reserved by{" "}
             <Link
               target="_blank"
               href="https://www.linkedin.com/in/piash-islam-2k/"
