@@ -4,6 +4,7 @@ import AboutSection from "./components/homepage/about/about";
 import ExperienceSection from "./components/homepage/experience/experience";
 import SkillsSection from "./components/homepage/skills/skills";
 import ProjectsSection from "./components/homepage/projects/projects";
+import CertificationsSection from "./components/homepage/certifications/certifications";
 import EducationSection from "./components/homepage/education/education";
 import ContactSection from "./components/homepage/contact/contact-section";
 import Footer from "./components/homepage/footer/footer";
@@ -27,6 +28,9 @@ export default function HomePage() {
       </section>
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <ProjectsSection />
+      </section>
+      <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
+        <CertificationsSection />
       </section>
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <EducationSection />
