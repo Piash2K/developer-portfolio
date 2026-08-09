@@ -10,6 +10,14 @@ export type ExperienceItem = {
 export const experiences: ExperienceItem[] = [
   {
     id: 1,
+    title: "Full Stack Web Developer",
+    organization: "Codex it Service Ltd.",
+    duration: "May 2026 - Present",
+    projectType: "Full-Time (Remote)",
+    liveLink: "https://www.codexitservice.com",
+  },
+  {
+    id: 2,
     title: "Smart Mentoring System",
     organization: "Developed for Daffodil International University",
     duration: "2025 - Present",
@@ -17,7 +25,7 @@ export const experiences: ExperienceItem[] = [
     liveLink: "http://smart-mentoring-system.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Catering Connect",
     organization: "Startup Project",
     duration: "2024 - 2025",

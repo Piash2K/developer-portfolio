@@ -5,7 +5,7 @@ import GlowCard from "../../helper/glow-card";
 
 function CertificationsSection() {
 	return (
-		<div id="certifications" className="relative z-50 my-12 scroll-mt-18 border-t border-[#25213b] lg:my-24">
+		<div id="certifications" className="relative z-50 my-10 scroll-mt-18 border-t border-[#25213b] lg:my-16">
 			<Image
 				src="/section.svg"
 				alt="Hero"
@@ -27,7 +27,7 @@ function CertificationsSection() {
 				</div>
 			</div>
 
-			<div className="py-8">
+			<div className="py-6">
 				<div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10">
 					{certificatesData.map((certificate) => (
 						<GlowCard key={certificate.id} identifier={`certificate-${certificate.id}`}>

@@ -8,7 +8,7 @@ import GlowCard from "../../helper/glow-card";
 
 function Experience() {
   return (
-    <div id="experience" className="relative z-50 my-12 scroll-mt-18 border-t border-[#25213b] lg:my-24">
+    <div id="experience" className="relative z-50 my-10 scroll-mt-18 border-t border-[#25213b] lg:my-16">
       <Image
         src="/section.svg"
         alt="Hero"
@@ -27,7 +27,7 @@ function Experience() {
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-4">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex items-start justify-center">
             <div className="h-full w-full">
@@ -68,7 +68,7 @@ function Experience() {
                           rel="noopener noreferrer"
                           className="relative z-10 mt-3 inline-flex items-center gap-2 rounded-full bg-linear-to-r from-pink-500 to-violet-600 px-4 py-1.5 text-xs font-semibold text-white transition-all duration-300 hover:scale-105 hover:from-violet-600 hover:to-pink-500 sm:text-sm"
                         >
-                          Live Link
+                          {item.liveLink.includes("codexitservice") ? "Company Website" : "Live Link"}
                           <FiExternalLink size={14} />
                         </a>
                       </div>

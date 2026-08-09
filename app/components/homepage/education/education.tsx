@@ -6,7 +6,7 @@ import GlowCard from "../../helper/glow-card";
 
 function Education() {
 	return (
-		<div id="education" className="relative z-50 my-12 scroll-mt-18 border-t border-[#25213b] lg:my-24">
+		<div id="education" className="relative z-50 my-10 scroll-mt-18 border-t border-[#25213b] lg:my-16">
 			<Image
 				src="/section.svg"
 				alt="Hero"
@@ -28,7 +28,7 @@ function Education() {
 				</div>
 			</div>
 
-			<div className="py-8">
+			<div className="py-6">
 				<div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
 					<div className="flex items-start justify-center">
 						<div className="w-full">

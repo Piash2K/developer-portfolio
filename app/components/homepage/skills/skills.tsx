@@ -7,7 +7,7 @@ import Marquee from "react-fast-marquee";
 
 function SkillsSection() {
 	return (
-		<section id="skills" className="relative z-10 my-12 scroll-mt-18 border-t border-[#25213b] lg:my-24">
+		<section id="skills" className="relative z-10 my-10 scroll-mt-18 border-t border-[#25213b] lg:my-16">
 			<div className="absolute left-[42%] top-6 h-25 w-25 translate-x-1/2 rounded-full bg-violet-100 opacity-20 blur-3xl" />
 
 			<div className="flex justify-center -translate-y-px">
@@ -24,7 +24,7 @@ function SkillsSection() {
 				</div>
 			</div>
 
-			<div className="my-12 w-full">
+			<div className="my-6 w-full">
 				<Marquee
 					gradient={false}
 					speed={80}

@@ -3,7 +3,7 @@ import ProjectCard from "./project-card";
 
 function ProjectsSection() {
 	return (
-		<section id="projects" className="relative z-10 my-12 scroll-mt-32 lg:my-24">
+		<section id="projects" className="relative z-10 my-10 scroll-mt-32 lg:my-16">
 			<div className="sticky top-10 z-10">
 				<div className="absolute -top-3 left-0 h-20 w-20 translate-x-1/2 rounded-full bg-violet-100 opacity-30 blur-3xl" />
 				<div className="relative flex items-center justify-start">
@@ -12,7 +12,7 @@ function ProjectsSection() {
 				</div>
 			</div>
 
-			<div className="pt-24">
+			<div className="pt-14">
 				<div className="flex flex-col gap-6">
 					{projectsData.slice(0, 4).map((project, index) => (
 						<div
