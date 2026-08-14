@@ -12,39 +12,48 @@ import Footer from "./components/homepage/footer/footer";
 import ScrollToTop from "./components/helper/scroll-to-top";
 
 export const metadata: Metadata = {
-  title: "Piash Islam | Full Stack Web Developer Portfolio",
+  title: "Piash Islam",
   description:
-    "Piash Islam portfolio website featuring full stack web development projects, experience, technical skills, and software engineering expertise.",
+    "Piash Islam is a Full Stack Web Developer and Software Engineer. Explore his projects, experience, technical skills, education, certifications, and modern web development work.",
 };
 
 export default function HomePage() {
   return (
     <div className="relative">
       <Navbar />
+
       <main className="mx-auto flex min-h-screen w-full max-w-screen-2xl items-start px-4 pb-6 pt-0 sm:px-6 lg:px-8">
         <HeroSection />
       </main>
+
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <AboutSection />
       </section>
+
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <ExperienceSection />
       </section>
+
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <SkillsSection />
       </section>
+
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <ProjectsSection />
       </section>
+
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <CertificationsSection />
       </section>
+
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <EducationSection />
       </section>
+
       <section className="mx-auto w-full max-w-screen-2xl px-4 pb-12 sm:px-6 lg:px-8">
         <ContactSection />
       </section>
+
       <Footer />
       <ScrollToTop />
     </div>
