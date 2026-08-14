@@ -2,10 +2,22 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
+import PersonSchema from "./components/seo/PersonSchema";
+
 
 export const metadata: Metadata = {
-  title: "Portfolio of Piash Islam- Software Engineer",
-  description: "Portfolio project powered by Next.js and TypeScript",
+  title: "Piash Islam | Software Engineer & Web Developer",
+  description:
+    "Piash Islam is a Software Engineer and Web Developer specializing in React, Next.js, TypeScript, Node.js, and modern web development.",
+  keywords: [
+    "Piash Islam",
+    "Piash Islam Software Engineer",
+    "Piash Islam Web Developer",
+    "Software Engineer",
+    "Web Developer",
+    "React Developer",
+    "Next.js Developer",
+  ],
   icons: {
     icon: "/Favicon.png",
   },
@@ -21,7 +33,10 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <PersonSchema />
+        {children}
+      </body>
     </html>
   );
 }
