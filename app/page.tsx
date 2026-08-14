@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import HeroSection from "./components/homepage/hero-section/hero-section";
 import Navbar from "./components/homepage/navbar";
 import AboutSection from "./components/homepage/about/about";
@@ -9,6 +10,12 @@ import EducationSection from "./components/homepage/education/education";
 import ContactSection from "./components/homepage/contact/contact-section";
 import Footer from "./components/homepage/footer/footer";
 import ScrollToTop from "./components/helper/scroll-to-top";
+
+export const metadata: Metadata = {
+  title: "Piash Islam | Full Stack Web Developer Portfolio",
+  description:
+    "Piash Islam portfolio website featuring full stack web development projects, experience, technical skills, and software engineering expertise.",
+};
 
 export default function HomePage() {
   return (
