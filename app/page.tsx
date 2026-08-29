@@ -12,9 +12,18 @@ import Footer from "./components/homepage/footer/footer";
 import ScrollToTop from "./components/helper/scroll-to-top";
 
 export const metadata: Metadata = {
-  title: "Piash Islam",
+  title: {
+    absolute: "Piash Islam Portfolio | Full Stack Web Developer",
+  },
   description:
-    "Piash Islam is a Full Stack Web Developer and Software Engineer. Explore his projects, experience, technical skills, education, certifications, and modern web development work.",
+    "Official portfolio website of Piash Islam, a Full Stack Web Developer and Software Engineer. Explore his projects, experience, technical skills, education, certifications, and modern web development work.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function HomePage() {

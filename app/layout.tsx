@@ -6,14 +6,19 @@ import PersonSchema from "./components/seo/PersonSchema";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://piash-islam.vercel.app"),
+  applicationName: "Piash Islam Portfolio",
+  authors: [{ name: "Piash Islam", url: "https://piash-islam.vercel.app/" }],
+  creator: "Piash Islam",
+  publisher: "Piash Islam",
+  referrer: "origin-when-cross-origin",
 
   title: {
-    default: "Piash Islam",
-    template: "%s | Piash Islam",
+    default: "Piash Islam Portfolio | Full Stack Web Developer",
+    template: "%s | Piash Islam Portfolio",
   },
 
   description:
-    "Piash Islam is a Full Stack Web Developer and Software Engineer specializing in React, Next.js, TypeScript, Node.js, API development, database design, and modern web applications.",
+    "Official portfolio website of Piash Islam, a Full Stack Web Developer and Software Engineer specializing in React, Next.js, TypeScript, Node.js, API development, database design, and modern web applications.",
 
   keywords: [
     "Piash Islam",
@@ -32,16 +37,32 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
+  manifest: "/manifest.webmanifest",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
   icons: {
     icon: "/Favicon.png",
+    shortcut: "/Favicon.png",
+    apple: "/Favicon.png",
   },
 
   openGraph: {
-    title: "Piash Islam",
+    title: "Piash Islam Portfolio | Full Stack Web Developer",
     description:
       "Official portfolio website of Piash Islam, a Full Stack Web Developer and Software Engineer.",
     url: "https://piash-islam.vercel.app/",
-    siteName: "Piash Islam",
+    siteName: "Piash Islam Portfolio",
     locale: "en_US",
     type: "website",
     images: [
@@ -56,7 +77,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Piash Islam",
+    title: "Piash Islam Portfolio | Full Stack Web Developer",
     description:
       "Official portfolio website of Piash Islam, a Full Stack Web Developer and Software Engineer.",
     images: ["/card.png"],
@@ -65,6 +86,15 @@ export const metadata: Metadata = {
 
   verification: {
     google: "vTVqt-ZUMRh92B5F61s7AtgS2Dpq6Q1vd3lwi2xIqIU",
+  },
+
+  other: {
+    "profile:first_name": "Piash",
+    "profile:last_name": "Islam",
+    "profile:username": "PiashIslam2K",
+    "og:profile:first_name": "Piash",
+    "og:profile:last_name": "Islam",
+    "og:profile:username": "PiashIslam2K",
   },
 };
 
